@@ -1,5 +1,20 @@
 <head>
-    <title>Flask app</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>GIV-Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
   </head>
-<h1>Hello World</h1>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="navbar-brand">
+            <img src="{{ url_for('static', filename='assets/logo/gblue.png') }}" width="30" height="30" alt="">
+            enerate
+            <img src="{{ url_for('static', filename='assets/logo/iblue.png') }}" width="30" height="30" alt="">
+            mage
+            <img src="{{ url_for('static', filename='assets/logo/vblue.png') }}" width="30" height="30" alt="">
+            ariations
+        </div>
+    </nav>
+    <div class="footer">
+        GIV-Project ©
+    </div>
+</body>
