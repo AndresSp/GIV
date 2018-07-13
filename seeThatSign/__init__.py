@@ -1,14 +1,14 @@
 from flask import Flask
 app = Flask(__name__)
 
-import giv.views
+import seeThatSign.views
 
 def create_app(debug=True):
     app = Flask(__name__)
     app.debug = debug
 
     # add your modules
-    app.register_module(giv.views)
+    app.register_module(seeThatSign.views)
     
     # other setup tasks
 

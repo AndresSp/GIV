@@ -1,7 +1,7 @@
 import os
 from flask import send_from_directory, render_template, request
 from werkzeug import secure_filename
-from giv import app
+from seeThatSign import app
 
 @app.route('/favicon.ico')
 def favicon():
