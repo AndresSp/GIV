@@ -2,9 +2,14 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 40px;
+    height: 50px;
     width: 100%;
     color: lightsteelblue;
     background-color: #f8f9fa;
     text-align: center;
+    
+}
+
+.footer-text{
+    vertical-align: center;
 }
