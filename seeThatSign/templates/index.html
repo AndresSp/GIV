@@ -1,9 +1,10 @@
 <head>
-    <title>GIV-Project</title>
+    <title>See That Sign Project</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
   </head>
 <body>
+    <!--//////// Navbar ///////////-->
     <nav class="navbar navbar-light bg-light">
         <div class="navbar-brand">
             <img src="{{ url_for('static', filename='assets/logo/gblue.png') }}" width="30" height="30" alt="">
@@ -14,7 +15,17 @@
             ariations
         </div>
     </nav>
+    <!-- ///////////////////////// -->
+
+    <form action = "http://127.0.0.1:5000/upload" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+
+    <!--//////// Footer ///////////-->
     <div class="footer">
-        GIV-Project ©
+        <span class="footer-text">See That Sign Project ©</span>
     </div>
+    <!-- ///////////////////////// -->
 </body>
