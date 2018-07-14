@@ -3,6 +3,7 @@ from setuptools import setup
 import os
 
 os.environ['FLASK_APP'] = 'seeThatSign'
+os.environ['FLASK_ENV'] = 'development'
 
 setup(
     name='seeThatSign',
@@ -18,6 +19,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'flask>=1.0.2',
+        'werkzeug',
         'virtualenv'
     ],
 )
