@@ -17,6 +17,10 @@
          <input type = "file" name = "file" />
          <input type = "submit"/>
       </form>
+      
+    {% if upload %}
+    <p><strong>{{ upload }}</strong> 
+    {% endif %}
 
     <!--//////// Footer ///////////-->
     <div class="footer">
