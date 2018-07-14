@@ -25,7 +25,7 @@ def upload_file():
             filename = secure_filename(f.filename)
             f.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
             upload = 'Upload Succesfully'
-        except HTTPException:
+        except HTTPException: ##Upload Fails
             upload = 'Upload a file'
     return render_template('index.html',upload=upload)
 
