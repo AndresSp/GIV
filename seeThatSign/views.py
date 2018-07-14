@@ -32,3 +32,7 @@ def upload_file():
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+@app.route('/generated', methods = ['GET'])
+def getGeneratedImages():
+    return 'Generated Images'
